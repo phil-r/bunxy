@@ -2,12 +2,14 @@
   "name": "bunxy",
   "module": "index.ts",
   "type": "module",
+  "license": "ISC",
   "scripts": {
     "start": "bun run example/index.ts",
     "dev": "bun --watch run example/index.ts",
     "dev:test": "bun --watch run testServer/index.ts",
     "lint": "tsc && prettier --check .",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "bun-types": "latest",
