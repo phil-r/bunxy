@@ -1,0 +1,24 @@
+{
+  "name": "bunxy",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run example/index.ts",
+    "dev": "bun --watch run example/index.ts",
+    "dev:test": "bun --watch run testServer/index.ts",
+    "lint": "tsc && prettier --check .",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
