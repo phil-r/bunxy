@@ -25,10 +25,6 @@ afterAll(() => {
   console.log('done with tests.');
 });
 
-test('2 + 2', () => {
-  expect(2 + 2).toBe(4);
-});
-
 test('Creating proxy', () => {
   expect(createProxy({ target: 'https://example.com' })).toBeDefined();
   expect(createProxy({ target: 'http://example.com' })).toBeDefined();
