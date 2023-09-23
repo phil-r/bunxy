@@ -13,15 +13,12 @@ const TEST_SERVER_URL = 'http://localhost:9090';
 let testServer: Server;
 
 beforeAll(() => {
-  console.log(performance.now());
-
   testServer = createProxyServer({ target: TEST_SERVER_URL });
   console.log('running tests.');
 });
 
 afterAll(() => {
   testServer.stop(true);
-  console.log(performance.now());
   console.log('done with tests.');
 });
 
