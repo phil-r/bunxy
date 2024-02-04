@@ -43,7 +43,7 @@ test('ReqMod allows changing request method', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
@@ -82,7 +82,7 @@ test('ReqMod allows changing request body', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
@@ -118,7 +118,7 @@ test('ReqMod allows changing request url', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
@@ -157,7 +157,7 @@ test('ReqMod allows changing request headers', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });

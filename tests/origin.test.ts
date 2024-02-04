@@ -44,7 +44,7 @@ test('Origin header is updated by default', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
@@ -80,7 +80,7 @@ test('Origin header update can be disabled', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
@@ -123,7 +123,7 @@ test('Origin header can be updated with reqMod', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
       origin: TEST_SERVER_URL,
     },
   });

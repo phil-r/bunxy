@@ -67,7 +67,7 @@ test('Proxy server response matches expected response', async () => {
       connection: 'keep-alive',
       'user-agent': 'TestAgent/1.0.0',
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate',
+      'accept-encoding': 'gzip, deflate, br',
     },
   });
 });
