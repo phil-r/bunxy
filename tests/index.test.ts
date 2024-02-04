@@ -1,4 +1,4 @@
-import { Server } from 'bun';
+import type { Server } from 'bun';
 import { expect, test, afterAll, beforeAll } from 'bun:test';
 
 import { createProxy } from '..';

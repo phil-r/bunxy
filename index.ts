@@ -1,6 +1,6 @@
 type ReqModResult = {
   url?: URL;
-  headers?: Headers;
+  headers?: Bun._Headers;
   body?: string;
   method?: string;
 };

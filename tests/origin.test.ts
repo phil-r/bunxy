@@ -1,9 +1,9 @@
-import { Server } from 'bun';
+import type { Server } from 'bun';
 import { expect, test, afterEach } from 'bun:test';
 
 import createProxyServer from '../example/server';
 import '../testServer';
-import { ReqMod } from '..';
+import type { ReqMod } from '..';
 
 const PROXY_SERVER_URL = 'http://localhost:8080';
 const TEST_SERVER_URL = 'http://localhost:9090';

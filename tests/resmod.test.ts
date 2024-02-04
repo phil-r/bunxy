@@ -1,9 +1,9 @@
-import { Server } from 'bun';
+import type { Server } from 'bun';
 import { expect, test, afterEach } from 'bun:test';
 
 import createProxyServer from '../example/server';
 import '../testServer/dumb';
-import { ResMod } from '..';
+import type { ResMod } from '..';
 
 const PROXY_SERVER_URL = 'http://localhost:8080';
 const TEST_SERVER_URL = 'http://localhost:8484';
@@ -36,7 +36,7 @@ test('ResMod allows changing response headers', async () => {
 
 test('ResMod allows changing response body', async () => {
   const resMod: ResMod = async (res) => {
-    const body = await res.json();
+    const body = (await res.json()) as { answer: number };
     const response = new Response(JSON.stringify({ answer: body.answer * 2 }));
     return response;
   };

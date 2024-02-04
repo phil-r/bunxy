@@ -1,5 +1,5 @@
 import Bun from 'bun';
-import { createProxy, ProxyOptions } from '..';
+import { createProxy, type ProxyOptions } from '..';
 
 export default (options: ProxyOptions) => {
   const proxy = createProxy(options);
